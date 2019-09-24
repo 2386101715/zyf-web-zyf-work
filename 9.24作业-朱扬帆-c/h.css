@@ -1,0 +1,191 @@
+.head{
+        width: 100%;
+        border: none;
+        min-height: 64px;
+        max-height: 1000px;
+        z-index: 3;
+        background-color: rgb(63,81,181);
+        color: rgb(255,255,255);
+    }
+.on{
+    min-height: 200px;
+    text-align: center;
+}
+.site{
+    display: inline-block;
+    position: relative;
+    font-family: "Roboto","Helvetica","Arial",sans-serif;
+    font-size: 20px;
+    line-height: 1;
+    letter-spacing: .02em;
+    font-weight: 400;
+    box-sizing: border-box;
+}
+.logo{
+    background:url(site-logo.png);
+    background-size: cover;
+    height: 120px;
+    width: 120px;
+    margin: 15px auto;
+}
+.text{
+    display: inline-block;
+    font-size: 14px;
+    text-align: center;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+.under{
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.08);
+    text-transform: uppercase;
+    height: 45px;
+    justify-content: center;
+}
+.font{
+    display: flex;
+    max-width: 900px;
+    text-align: center;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    height: 64px;
+}
+.link{
+    flex: 1;
+    line-height: 42px;
+    color: #fff;
+    padding: 0 24px;
+    text-decoration: none;
+    margin: 0;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0;
+    opacity: .87;
+    font-family: "Roboto","Helvetica","Arial",sans-serif;
+}
+.Subject{
+    margin: 1em auto;
+    min-height: 580px;
+    position: relative;
+    padding-bottom: 2em;
+    box-shadow: 0 4px 5px 0 rgba(0,0,0,.14), 0 1px 10px 0 rgba(0,0,0,.12), 0 2px 4px -1px rgba(0,0,0,.2);
+    box-sizing: border-box;
+    font-size: 16px;
+    font-weight: 400;
+    overflow: hidden;
+    width: 884px;
+    max-height: 1250px;
+    z-index: 1;
+    position: relative;
+    background: #fff;
+    border-radius: 2px;
+}
+.h1{
+    display: inline-block;
+    color: #000;
+    font-size: 24px;
+    font-weight: 300;
+    letter-spacing: -.02em;
+    font-family: "Roboto","Helvetica","Arial",sans-serif;
+    margin-left: 20px;
+}
+.Subject-to{
+    background-repeat: repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    background-origin: padding-box;
+    background-attachment: scroll;
+    box-sizing: border-box;
+}
+.Subject-tail{
+    max-width: 700px;
+    margin: 0 auto;
+}
+h3{
+    font-family: "Roboto","Helvetica","Arial",sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 32px;
+}
+.m{
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+.pp{
+    font-size: 14px;
+    letter-spacing: 0;
+    margin: 0 0 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: rgba(0,0,0,.54);
+    width: 407px;
+}
+.jpg1{
+    float: left;
+    background: url(person1.jpg) center/cover;
+    box-sizing: border-box;
+    width: 200px;
+    height: 200px;
+    margin-right: 20px;
+    position: relative;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.2), 0 1px 5px 0 rgba(0,0,0,.12);
+}
+.jpg1-txt{
+    height: 52px;
+    padding: 16px;
+    background: rgba(0, 0, 0, 0.3);
+    font-size: 16px;
+    line-height: normal;
+    width: 100%;
+    box-sizing: border-box;
+    position: absolute;
+    top: 150px;
+}
+.jpg1-txt{
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+}
+.jpg2{
+    float: left;
+    background: url(person2.jpg) center/cover;
+    box-sizing: border-box;
+    width: 200px;
+    height: 200px;
+    margin-right: 20px;
+    position: relative;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.2), 0 1px 5px 0 rgba(0,0,0,.12);
+}
+.jpg2-txt{
+    height: 52px;
+    padding: 16px;
+    background: rgba(0, 0, 0, 0.3);
+    font-size: 16px;
+    line-height: normal;
+    width: 100%;
+    box-sizing: border-box;
+    position: absolute;
+    top: 150px;
+}
+.jpg2-txt{
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+}
+.tail{
+    margin-top: 30px;
+    padding: 32px 16px;
+    color: #9e9e9e;
+    background-color: #424242;
+    margin: 0 auto;
+}
+.tail-f{
+    display: flex;
+    justify-content: center;
+}
+.f-s{
+    line-height: 36px;
+    color: #fff;
+    vertical-align: middle;
+}
