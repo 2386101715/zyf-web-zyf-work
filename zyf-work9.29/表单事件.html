@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+        <input type="text" id="t1" placeholder="请输入用户名" />
+		<span id="span"></span>
+		<br/>
+		<input type="password" id="t2" placeholder="请输入密码" />
+		<br/>
+		<button id="bt">确认提交</button>
+		<script type="text/javascript">
+			var t1 = document.getElementById('t1');
+			var t2 = document.getElementById('t2');
+			var bt = document.getElementById('bt');
+			var span = document.getElementById('span');
+			var arr = ['tom','jack','lili'];
+			t1.onblur = function(){
+				if(t1.value==''){
+				 }else if(arr.indexOf(t1.value) === -1){
+				span.innerText = '该用户名可以使用';
+				 }else{
+				span.innerText = '该用户名已被注册';
+				 }
+				bt.onclick = function(){
+				console.log(arr.indexOf(t1.value));
+					if(t1.value == ''){
+						alert('请输入用户名');
+					}else if(t2.value == ''){
+						alert('请输入密码');
+					}else if(arr.indexOf(t1.value) != -1){
+						alert('用户名已被注册');
+					}else{
+						alert('注册成功')
+					}	
+				}
+			}
+						
+		</script>
+
+</body>
+</html>
