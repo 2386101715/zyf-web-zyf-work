@@ -1,0 +1,39 @@
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<input type="text" name="t" id="t" value="" /><br>
+		<input type="button" name="b" id="b" value="签到"/>
+		<div id="dv">
+		</div>
+		<div id="dv1">
+		</div>
+		<script type="text/javascript">
+			var txt=document.getElementById("t");
+			var btn=document.getElementById("b");
+			var dv=document.getElementById("dv");
+			var dv1=document.getElementById("dv1");
+			var namearr=["小叮当","詹姆","豆丁","小屁娃","榆树","天天"];
+			var narr=[];
+			btn.onclick=function(){
+				if(txt.value!=namearr[namearr.indexOf(txt.value)]){
+					alert("不存在此名字");
+				}else{
+					if(narr.length>=namearr.length){
+						alert("都已签到");
+					}else{
+						if(txt.value!=narr[narr.indexOf(txt.value)]){
+							narr.push(txt.value);
+							alert("签到成功");
+						}else{
+							alert("已签到");
+						}
+					}
+				}	
+			}
+			
+		</script>
+	</body>
+</html>
