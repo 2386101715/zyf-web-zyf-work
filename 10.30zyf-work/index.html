@@ -1,0 +1,89 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="jquery-1.10.2.min.js"></script>
+        <style type="text/css">
+           *{
+              margin: 0;
+              padding: 0;
+            }
+            .mydiv ul{
+                position: relative;
+            }
+			.mydiv ul li{
+				float: left;
+				width: 50px;
+				height: 50px;
+                border-radius: 50%;
+                margin-top: 100px;
+                list-style: none;
+			}
+			.mydiv ul li:nth-child(1){
+                width: 70px;
+                height: 70px;
+				background-color:rebeccapurple;
+                display: block;
+                z-index: 9;
+                position: absolute;
+                top: 0;
+                left: 0;
+			}
+			.mydiv ul li:nth-child(2){
+                background-color:khaki;
+                margin-left: -100px;
+			}
+			.mydiv ul li:nth-child(3){
+                background-color:violet;
+                margin-left: -110px;
+			}
+			.mydiv ul li:nth-child(4){
+                background-color:cadetblue;
+                margin-left: -160px;
+			}
+			.mydiv ul li:nth-child(5){
+                background-color:pink;
+                margin-left: -210px;
+			}
+			.mydiv ul li:nth-child(6){
+                background-color:brown;
+                margin-left: -260px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="mydiv">
+			<ul>
+                <li id="1"></li>
+				<li id="2"></li>
+				<li id="3"></li>
+				<li id="4"></li>
+				<li id="5"></li>
+				<li id="6"></li>
+			</ul>
+		</div>
+		<script>
+            var a = true;
+            $("#1").click(function(){
+             if(a){
+                 a=false
+            $('#2').css({"margin-left":"70px","transition":"1s"}).click(function(){$('body,#1').css("background-color","red")})
+            $('#3').css({"margin-left":"0px","transition":"1s"}).click(function(){$('body,#1').css("background-color","blue")})
+            $('#4').css({"margin-left":"0px","transition":"1s"}).click(function(){$('body,#1').css("background-color","yellow")})
+            $('#5').css({"margin-left":"0px","transition":"1s"}).click(function(){$('body,#1').css("background-color","red")})
+            $('#6').css({"margin-left":"0px","transition":"1s"}).click(function(){$('body,#1').css("background-color","red")})
+                }else{
+                a=true
+            $('#2').css({"margin-left":"10px","transition":"1s"}).click(function(){$('body,#1').css("background-color","red")})
+            $('#3').css({"margin-left":"-50px","transition":"1s"}).click(function(){$('body,#1').css("background-color","blue")})
+            $('#4').css({"margin-left":"-50px","transition":"1s"}).click(function(){$('body,#1').css("background-color","yellow")})
+            $('#5').css({"margin-left":"-50px","transition":"1s"}).click(function(){$('body,#1').css("background-color","red")})
+            $('#6').css({"margin-left":"-50px","transition":"1s"}).click(function(){$('body,#1').css("background-color","red")})  
+           }
+        })
+
+		</script>
+	</body>
+</html>
